@@ -23,23 +23,25 @@ It wrote the code, ran away, and now the game is unplayable.
    - Run `pytest` in your terminal.
    - Keep fixing until all tests pass!
 
-## 📝 Document Your Experience
+## Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+This project taught me how subtle bugs in AI-generated code can completely break 
+a game's logic. The hardest bug to catch was the string vs integer comparison — 
+the game looked like it was working but was giving wrong hints every other guess.
 
-## 📸 Demo Walkthrough
+I used Claude to help identify bugs, write fixes, and generate pytest tests. 
+I learned that AI suggestions need to be verified — Claude swapped the hint 
+messages at one point and I had to catch it by reading the error output carefully.
 
-Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
-
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+## Demo Walkthrough
+1. User selects "Normal" difficulty (range: 1–100, 8 attempts)
+2. User enters a guess of 40 → game returns "Go HIGHER!"
+3. User enters a guess of 70 → game returns "Go LOWER!"
+4. Score decreases by 5 after each wrong guess
+5. User enters a guess of 55 → game returns "Go HIGHER!"
+6. User enters a guess of 63 → game returns "Correct!" 🎉
+7. Final score displays and balloons appear
+8. User clicks "New Game" to reset and play again
 
 ## 🧪 Test Results
 
