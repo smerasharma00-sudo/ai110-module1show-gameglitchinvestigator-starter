@@ -23,6 +23,7 @@ It wrote the code, ran away, and now the game is unplayable.
    - Run `pytest` in your terminal.
    - Keep fixing until all tests pass!
 
+<<<<<<< HEAD
 ## Document Your Experience
 
 This project taught me how subtle bugs in AI-generated code can completely break 
@@ -42,6 +43,25 @@ messages at one point and I had to catch it by reading the error output carefull
 6. User enters a guess of 63 → game returns "Correct!" 🎉
 7. Final score displays and balloons appear
 8. User clicks "New Game" to reset and play again
+=======
+## 📝 Document Your Experience
+
+- [ ] Describe the game's purpose.
+- [ ] Detail which bugs you found.
+- [ ] Explain what fixes you applied.
+
+## 📸 Demo Walkthrough
+
+Describe your fixed game in numbered steps so a reader can follow along without watching a video:
+
+1. <!-- Describe this step -->
+2. <!-- Describe this step -->
+3. <!-- Describe this step -->
+4. <!-- Describe this step -->
+5. <!-- Add more steps as needed -->
+
+**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+>>>>>>> 2a6e4245481ce54cce8681d351fe2487e4620e90
 
 ## 🧪 Test Results
 

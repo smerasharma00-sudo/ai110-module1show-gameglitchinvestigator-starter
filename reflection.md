@@ -4,6 +4,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 
 ## 1. What was broken when you started?
 
+<<<<<<< HEAD
 The first time I ran the game, it looked like a working number guessing game with a 
 difficulty selector, a score, and a text input. But after playing a few rounds, the 
 hints were clearly wrong — guessing a number that was too high would sometimes say 
@@ -30,6 +31,23 @@ number is even. Wrong guesses should never reward points.
 | Switch to Hard difficulty | Harder range than Normal (e.g. 1–200) | Easier range of 1–50 shown | none |
 
 
+=======
+- What did the game look like the first time you ran it?
+- List at least two concrete bugs you noticed at the start  
+  (for example: "the hints were backwards").
+
+**Bug Reproduction Log**
+
+Document at least 3 bugs you found. Add rows as needed.
+
+| Input | Expected Behavior | Actual Behavior | Console Output / Error |
+|-------|-------------------|-----------------|------------------------|
+| | | | |
+| | | | |
+| | | | |
+
+---
+>>>>>>> 2a6e4245481ce54cce8681d351fe2487e4620e90
 
 ## 2. How did you use AI as a teammate?
 
@@ -50,11 +68,11 @@ number is even. Wrong guesses should never reward points.
 
 ## 4. What did you learn about Streamlit and state?
 
+<<<<<<< HEAD
 Streamlit reruns the entire Python script from top to bottom every single time 
 the user interacts with anything — clicking a button, typing in a box, anything. 
 This means normal variables reset to their default values on every rerun. 
 Session state (st.session_state) is like a backpack the app carries between 
-reruns — anything stored in it survives. So the secret number, score, and 
 attempt count all live in session state, otherwise they would reset to zero 
 every time you clicked Submit.
 
@@ -91,3 +109,15 @@ behavior. For example, after fixing check_guess, I ran python3 -m pytest and saw
 Claude helped me write the pytest tests, including test_wrong_guess_loses_points and 
 test_hard_mode_harder_than_normal. Running pytest showed me exactly which functions 
 still had bugs before I ran the full game.
+=======
+- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+
+---
+
+## 5. Looking ahead: your developer habits
+
+- What is one habit or strategy from this project that you want to reuse in future labs or projects?
+  - This could be a testing habit, a prompting strategy, or a way you used Git.
+- What is one thing you would do differently next time you work with AI on a coding task?
+- In one or two sentences, describe how this project changed the way you think about AI generated code.
+>>>>>>> 2a6e4245481ce54cce8681d351fe2487e4620e90
